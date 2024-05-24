@@ -5,7 +5,7 @@ pkgver=1.5.0
 pkgrel=11
 url="https://gnome.pages.gitlab.gnome.org/libadwaita"
 pkgdesc='libadwaita; Includes a patch to not overwrite the system theme'
-arch=('i686' 'x86_64' 'armv7h' 'armv6h' 'aarch64')
+arch=('i686' 'amd64' 'armv7h' 'armv6h' 'aarch64')
 license=('LGPL')
 
 provides=("libadwaita=${pkgver}" "libadwaita-1.so=0-64")
