@@ -1,12 +1,12 @@
 # Maintainer: ich <remove dashes in s-c--25-ni at gmail dot com>
 
 pkgname=libadwaita-without-adwaita-git
-pkgver=1.5.0
-pkgrel=11
+pkgver=1.7.0
+pkgrel=17
 url="https://gnome.pages.gitlab.gnome.org/libadwaita"
 pkgdesc='libadwaita; Includes a patch to not overwrite the system theme'
 arch=('i686' 'amd64' 'armv7h' 'armv6h' 'aarch64')
-license=('LGPL')
+license=(LGPL-2.1-or-later)
 
 provides=("libadwaita=${pkgver}" "libadwaita-1.so=0-64")
 conflicts=('libadwaita')
@@ -21,7 +21,7 @@ sha256sums=(
 )
 
 depends=('libgtk-4-1')
-makedepends=(git meson gi-docgen sassc gobject-introspection valac pkg-config patch cmake meson libsass1 gcc)
+makedepends=(git meson gi-docgen sassc gobject-introspection valac pkg-config patch cmake meson libsass1 gcc libglib2.0-dev)
 
 build() {
   cd "${srcdir}/${pkgname}"
