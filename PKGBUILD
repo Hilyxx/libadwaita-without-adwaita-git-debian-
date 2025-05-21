@@ -21,7 +21,7 @@ sha256sums=(
 )
 
 depends=('libgtk-4-1')
-makedepends=(git meson gi-docgen sassc gobject-introspection valac pkg-config patch cmake meson libsass1 gcc libglib2.0-dev)
+makedepends=(git meson gi-docgen sassc gobject-introspection valac pkg-config patch cmake libsass1 gcc libglib2.0-dev)
 
 build() {
   cd "${srcdir}/${pkgname}"
