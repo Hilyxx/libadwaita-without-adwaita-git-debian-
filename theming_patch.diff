@@ -76,5 +76,5 @@ index b01727e5..27c6c7d6 100644
 +    g_signal_connect (interface_settings, "changed", G_CALLBACK (adw_style_manager_theme_changed), self->display);
 +  }
  }
-
+ 
  static void
