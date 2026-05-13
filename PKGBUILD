@@ -17,7 +17,7 @@ source=(
 sha256sums=('SKIP' 'SKIP')
 
 depends=(appstream fribidi glib2 glibc graphene gtk4 pango)
-makedepends=(meson gi-docgen sassc gobject-introspection valac pkg-config patch cmake libsass gcc glib2-devel)
+makedepends=(meson gi-docgen sassc gobject-introspection valac pkg-config patch cmake libsass1 gcc libglib2.0-dev)
 
 build() {
   cd "$srcdir/libadwaita-$pkgver"
